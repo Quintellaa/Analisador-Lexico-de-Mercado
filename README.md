@@ -4,11 +4,17 @@ Victor Borges Quintella de Almeida - 2544963 <br> Kathleen Aquino - 2364196
 
 ---
 
-# Analisador Lexico | Rastreio de Encomendas
+# Analisador Lexico | Rastreio de Encomendas - Mercado Livre
 
 ---
 
 ## 📋 Visão Geral
+
+### Exemplos de Entrada
+* Numero do Rastreio
+* Status
+* Saiu para entrega
+* Horario
 
 ---
 
