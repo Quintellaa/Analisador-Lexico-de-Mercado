@@ -3,29 +3,35 @@
 Victor Borges Quintella de Almeida - 2544963 <br> Kathleen Aquino Lima - 2364196 
 
 ---
+# 📦 Analisador Léxico de Mercado — Simulador de Rastreio
 
-# Analisador Lexico | Rastreio de Encomendas - Mercado Livre
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![Gradio](https://img.shields.io/badge/Gradio-Interface-orange?logo=gradio)
+![Pandas](https://img.shields.io/badge/Pandas-Dataframe-green?logo=pandas)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
 ---
 
 ## 📋 Visão Geral
 
+Este projeto implementa um **analisador léxico** para entradas relacionadas a rastreamento de encomendas e simula o processo de entrega.  
+A interface é construída com **Gradio**, permitindo interação em abas para análise de tokens, rastreamento, pós‑processamento e execução de casos de teste.
+
 ### Exemplos de Entrada
-* Numero do Rastreio
-* Status
-* Saiu para entrega
-* Horario
+- Número do Rastreio  
+- Status  
+- Saiu para entrega  
+- Horário  
 
 ---
 
 ## ✨ Funcionalidades
 
-- 🔐 **Login por CPF** — autenticação simples e direta
-- 💬 **Chat em linguagem natural** — o sistema classifica a intenção do usuário automaticamente
-- 📊 **Consulta de dados** — fatura, limite, bloqueio, parcelas e senha
-- ✏️ **Atualização de dados** — alteração de fatura e limite via conversa
-- 🗑️ **Exclusão de conta** — com confirmação explícita do usuário
-- 🗄️ **Banco de dados SQLite** — leve, local e sem dependências externas
+- 🔎 **Tabela de Tokens** — identifica palavras reservadas, códigos de rastreio, datas, horas, CEPs e strings entre aspas  
+- 📦 **Rastreamento de Encomenda** — simula eventos de entrega com linha do tempo  
+- 📊 **Pós‑Processamento** — gera resumo da entrega, progresso e alertas  
+- 🧪 **Casos de Teste** — valida entradas válidas e inválidas  
+- 📖 **Diário de Ambiguidade** — documenta decisões sobre conflitos de tokens  
 
 ---
 
@@ -33,21 +39,18 @@ Victor Borges Quintella de Almeida - 2544963 <br> Kathleen Aquino Lima - 2364196
 
 | Camada      | Tecnologia                        |
 |-------------|-----------------------------------|
-| Back-end    | Python 3, Flask, Flask-CORS       |
-| Banco       | SQLite3                           |
-| Front-end   | HTML5, CSS3, JavaScript (Vanilla) |
+| Back-end    | Python 3, Regex, Pandas           |
+| Interface   | Gradio                            |
 | Fonte       | Google Fonts — Inter              |
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-```
-MonoIA/
-├── app.py          # Servidor Flask — rotas e lógica de classificação de intenção
-├── crud.py         # Funções de acesso ao banco (Create, Read, Update, Delete)
-├── database.py     # Script de criação e seed do banco de dados
-├── clientes.db     # Banco de dados SQLite (gerado pelo database.py)
-├── index.html      # Interface do chatbot (front-end)
-├── respostas.json  # Respostas padrão por categoria (referência)
-└── perguntas.csv   # Base de perguntas para testes
+Analisador-Rastreio/
+├── app.py          # Código principal com definição de tokens, funções e interface Gradio
+├── lexer()         # Função de análise léxica
+├── rastrear()      # Simulação de rastreamento de encomenda
+├── pos_processamento() # Pós-processamento e resumo da entrega
+├── testes()        # Casos de teste válidos e inválidos
+└── README.md       # Documentação do projeto
