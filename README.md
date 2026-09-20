@@ -1,6 +1,6 @@
 # Participantes
 
-Victor Borges Quintella de Almeida - 2544963 <br> Kathleen Aquino - 2364196 
+Victor Borges Quintella de Almeida - 2544963 <br> Kathleen Aquino Lima - 2364196 
 
 ---
 
