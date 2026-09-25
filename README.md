@@ -55,3 +55,16 @@ Analisador-Rastreio/
 ├── pos_processamento() # Pós-processamento e resumo da entrega
 ├── testes()        # Casos de teste válidos e inválidos
 └── README.md       # Documentação do projeto
+
+
+## Prints do Projeto
+<img width="1104" height="724" alt="image" src="https://github.com/user-attachments/assets/09bda7d9-762f-4ec0-b776-daea94918df8" />
+<img width="1102" height="747" alt="image" src="https://github.com/user-attachments/assets/3f6a6093-a8ee-471c-8a57-1232caa1ef73" />
+<img width="1101" height="729" alt="image" src="https://github.com/user-attachments/assets/15055118-5f1d-49c1-85ab-01ee6e299288" />
+<img width="1102" height="736" alt="image" src="https://github.com/user-attachments/assets/536f3250-ae73-4d56-8e91-1ffb1b01432a" />
+<img width="1104" height="682" alt="image" src="https://github.com/user-attachments/assets/0c6689eb-19d0-4f3e-9274-e776c94c142f" />
+<img width="1106" height="444" alt="image" src="https://github.com/user-attachments/assets/9f1a7c3d-ddd1-46c7-ac10-b4640316226b" />
+
+
+
+
